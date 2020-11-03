@@ -48,30 +48,3 @@ int stack_pop(Stack *stack)
 	stack->list[stack->top--] = 0;
 	return num;
 }
-
-// #include <stdio.h>
-
-// typedef struct {
-// 	int top;
-// 	int limit;
-// 	int list[];
-// } Stack;
-
-// int push(Stack *stack, int num);
-// int pop(Stack *stack);
-
-// int push(Stack *stack, int num)
-// {
-// 	if (stack->top >= stack->limit)
-// 		return -1;
-// 	stack->list[stack->top++] = num;
-// 	return 0;
-// }
-
-// int pop(Stack *stack)
-// {
-// 	if (stack->top <= 0)
-// 		return -1;
-// 	stack->top--;
-// 	return 0;
-// }
